@@ -1,0 +1,5 @@
+Exploratory Data Analysis Summary
+
+We performed an exploratory analysis on the CFPB complaint dataset to understand its structure and content. The dataset includes a wide range of financial products, with the highest number of complaints related to credit cards and money transfers. A significant portion of the complaints do not contain a narrative, which are filtered out to ensure relevance to the RAG pipeline.
+
+Word count analysis revealed that complaint narratives vary significantly in length, ranging from a few words to over 1,000 words. We retained and cleaned the narratives for the five key product types relevant to our project: Credit card, Personal loan, BNPL, Savings account, and Money transfers. The narratives were normalized by lowercasing, removing special characters, and eliminating boilerplate text to improve downstream embedding quality.
